@@ -1,0 +1,76 @@
+/* Workout Section */
+.contactus-media {
+  display: inline-flex;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  width: 95%;
+  margin-left: 3%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  padding: 0;
+}
+
+.contactus-media h2 {
+  text-align: left;
+  font-weight: 700;
+  margin: 20px;
+}
+
+.contactus-media p {
+  text-align: left;
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.map-list {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* padding: 30px; */
+  justify-content: space-around;
+  width: 100%;
+}
+
+.map-list .card {
+  width: 100%;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.googlemap {
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 30px;
+  height: 420px;
+  border: solid 2px gray;
+  background-color: antiquewhite;
+}
+
+.card-body {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.listsocialicons {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  /* padding: 30px; */
+  justify-content: space-around;
+}
+
+.listsocialicons img {
+  width: 10vw;
+  height: 10vw;
+  background-size: cover;
+}

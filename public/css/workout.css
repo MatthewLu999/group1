@@ -1,0 +1,200 @@
+/* Workout Intensity Section */
+.workout-intensity {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  text-align: left;
+  border-radius: 20px;
+}
+
+.workout-intensity h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #3230bb;
+  text-align: left;
+  padding-left: 30px;
+}
+
+/* Flexbox for Intensity Levels */
+.intensity-levels {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.level {
+  flex: 1;
+  padding-bottom: 20px;
+  border: 1px solid #383838;
+  background-color: #fffdfd;
+  text-align: center;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.level img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.level p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.level:hover {
+  background-color: #fefae0;
+}
+
+.exercise-types {
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: left;
+  background-color: #fff;
+}
+
+.exercise-types h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #3230bb;
+  padding-left: 30px;
+}
+
+.exercise-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.exercise-option {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #383838;
+  background-color: #fffdfd;
+  text-align: center;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.exercise-option:hover {
+  background-color: #fefae0;
+}
+
+.exercise-option.selected {
+  background-color: #cce5ff;
+  border-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .exercise-options {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intensity-levels {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+#exercise-links a {
+  display: block;
+  margin-bottom: 10px;
+  color: #0073e6;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#exercise-links a:hover {
+  text-decoration: underline;
+}
+
+#workout-details {
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+#workout-details .workout-item {
+  margin-bottom: 20px;
+}
+
+#workout-details video {
+  width: 100%;
+  height: auto;
+}
+
+.workout-details {
+  margin-top: 20px;
+}
+
+.exercise-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.video-content {
+  flex-shrink: 0;
+}
+
+.video-thumbnail {
+  max-width: 1200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  margin: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th {
+  background-color: #3578c1;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+td {
+  padding: 25px;
+  border: 1px solid #78797a;
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+  font-size: 24px;
+
+}
+
+tr:hover td {
+  background-color: #a3b0bc;
+}
+
+iframe {
+  max-width: 1000px;
+  height: 300px;
+  border: none;
+  border-radius: 15px;
+}

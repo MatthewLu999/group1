@@ -1,0 +1,330 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  color: #005f9e;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0073e6;
+  box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
+}
+
+.navbar img {
+  text-align: left;
+}
+
+.navbar li {
+  border-radius: 10px;
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+.navbar-toggler:hover {
+  color: black;
+  background-color: #fff3b0;
+}
+
+.navbar li a {
+  padding: 10px;
+  color: white;
+}
+
+
+.show {
+  color: black !important;
+}
+
+.nav-item .dropdown-menu {
+  font-weight: 500;
+  background-color: #0073e6;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #0073e6;
+  box-shadow: none;
+  color: white !important;
+}
+
+.navbar li {
+  margin-left: 10px;
+}
+
+.navbar li a {
+  text-align: left;
+  color: white;
+}
+
+.navbar li a:hover {
+  color: yellow !important;
+  border-bottom: 3px solid #fff3b0;
+}
+
+
+.navbar .active a {
+  color: yellow !important;
+  border-bottom: 3px solid #fff3b0;
+}
+
+.navbar .imgmainlogo {
+  margin-left: 0px;
+  padding: 5px;
+}
+
+.user-info {
+  color: white;
+}
+
+.section-carousel {
+  margin-top: 2vw;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel {
+  color: white;
+  font-weight: 300;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.carousel h3 {
+  color: white;
+}
+
+.carousel .carousel-caption {
+  background-color: grey;
+  border-radius: 10px;
+  opacity: 0.8;
+  font-weight: 900;
+}
+
+.carousel img {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+/* Wellness News Section */
+#wellness-news {
+  background-color: #f7fafc;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+#wellness-news img {
+  float: left;
+  margin-right: 20px;
+  /* max-width: 150px; */
+}
+
+.news-content {
+  display: flex;
+  /* Use flexbox for layout */
+}
+
+/* Workout Section */
+.workout-section {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.workout-section p {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.exercise-list {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* padding: 30px; */
+  justify-content: space-between;
+}
+
+.exercise-list .card {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.exercise-list .card:hover {
+  background-color: #fefae0;
+}
+
+.exercise-list img {
+  width: 100vw;
+  height: 100vw;
+  padding: 5px;
+  border-radius: 20px 20px 0px 0px;
+  background-color: grey;
+  background-size: contain;
+  transition: transform 0.2s ease-in-out;
+}
+
+.exercise-list img:hover {
+  background-color: #bc6c25;
+  transform: scale(1.1);
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.image-container {
+  flex: 1;
+  /* Take up half the row */
+}
+
+.text-container {
+  flex: 1;
+  /* Take up the other half */
+}
+
+.news-content img {
+  object-fit: cover;
+  width: 80%;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid;
+}
+
+.news-content p {
+  font-size: 25px;
+  padding: 10px;
+  /* Optional: add some padding for better spacing */
+}
+
+/* responsive for many kinds of interface */
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+  /* formart for nav bar  */
+  .navbar li a {
+    text-align: center;
+    color: white;
+  }
+
+  .navbar .imgmainlogo {
+    margin-left: 30%;
+    padding: 5px;
+  }
+
+  /* responsive for excercise lists */
+  .exercise-list {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    flex: 1;
+  }
+
+  /* formart for items inside this */
+  .exercise-list .card {
+    display: inline-block;
+    margin: 10px;
+    align-self: center;
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+  /* * responsive for excercise lists */
+  .exercise-list {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  /* formart for items inside this */
+  .exercise-list .card {
+    display: inline-block;
+    margin: 10px;
+    align-self: center;
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+
+  /* * responsive for excercise lists */
+  .exercise-list {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  /* * responsive for excercise lists */
+  .exercise-list {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
