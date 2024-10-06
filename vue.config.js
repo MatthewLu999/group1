@@ -17,6 +17,6 @@ module.exports = defineConfig({
       .set('@css', path.resolve(__dirname, 'src/assets/css'))
   },
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/capstoneproject1/'
+    ? '/group1/'
     : '/'
 })
