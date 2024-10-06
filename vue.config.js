@@ -16,7 +16,5 @@ module.exports = defineConfig({
     config.resolve.alias
       .set('@css', path.resolve(__dirname, 'src/assets/css'))
   },
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/group1/'
-    : '/'
+  publicPath: '/'
 })
