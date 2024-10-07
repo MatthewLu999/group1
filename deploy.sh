@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+git checkout demo
 
 # abort on errors
 set -e
