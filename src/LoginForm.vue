@@ -92,8 +92,8 @@ import { googleSdkLoaded } from 'vue3-google-login'
 import axios from 'axios'
 const ClientID = '352276418953-n2ev7mcmjsc094j897m89igeg26gfbvl.apps.googleusercontent.com'
 const ClientSecret = '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'
-const RedireUrlPost = 'http://localhost:8080/viewjobs/loginform'
-const RedirectUrlCallBack = 'http://localhost:8080'
+const RedireUrlPost = 'http://www.matthewluchicken.com/viewjobs/loginform'
+const RedirectUrlCallBack = 'http://www.matthewluchicken.com'
 export default {
   name: 'LoginForm',
   data () {
