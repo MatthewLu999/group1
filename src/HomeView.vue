@@ -53,12 +53,12 @@
                 </div>
               </div>
               </div>
-              <div class="pagination">
+            </div>
+            <div class="pagination">
                 <button>Previous</button>
                 <button>1</button>
                 <button>2</button>
                 <button>Next</button>
-            </div>
             </div>
         </section>
 
@@ -77,12 +77,12 @@
                 </div>
               </div>
               </div>
-              <div class="pagination">
+            </div>
+            <div class="pagination">
                 <button>Previous</button>
                 <button>1</button>
                 <button>2</button>
                 <button>Next</button>
-            </div>
             </div>
         </section>
          <!-- Release Stress Section -->
@@ -100,12 +100,12 @@
                 </div>
               </div>
               </div>
+            </div>
             <div class="pagination">
                 <button>Previous</button>
                 <button>1</button>
                 <button>2</button>
                 <button>Next</button>
-            </div>
             </div>
         </section>
          <!-- Release Stress Section -->
@@ -123,12 +123,12 @@
                 </div>
               </div>
               </div>
-              <div class="pagination">
+            </div>
+            <div class="pagination">
                 <button>Previous</button>
                 <button>1</button>
                 <button>2</button>
                 <button>Next</button>
-            </div>
             </div>
         </section>
 

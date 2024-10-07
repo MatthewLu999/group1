@@ -90,8 +90,8 @@
 <script>
 import { googleSdkLoaded } from 'vue3-google-login'
 import axios from 'axios'
-const ClientID = '352276418953-n2ev7mcmjsc094j897m89igeg26gfbvl.apps.googleusercontent.com'
-const ClientSecret = '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'
+const ClientID = '1091308460295-dlfbq14ea6ks10l2p4mtp3l95pievnc5.apps.googleusercontent.com'
+const ClientSecret = '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'
 const RedireUrlPost = 'https://www.matthewluchicken.com'
 const RedirectUrlCallBack = 'https://www.matthewluchicken.com/viewjobs/loginform'
 export default {
