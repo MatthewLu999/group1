@@ -92,8 +92,8 @@ import { googleSdkLoaded } from 'vue3-google-login'
 import axios from 'axios'
 const ClientID = '1091308460295-dlfbq14ea6ks10l2p4mtp3l95pievnc5.apps.googleusercontent.com'
 const ClientSecret = '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'
-const RedireUrlPost = 'https://www.matthewluchicken.com'
-const RedirectUrlCallBack = 'https://www.matthewluchicken.com/viewjobs/loginform'
+const RedireUrlPost = 'https://www.matthewluchicken.com/viewjobs/loginform'
+const RedirectUrlCallBack = 'https://www.matthewluchicken.com'
 export default {
   name: 'LoginForm',
   data () {
@@ -202,7 +202,7 @@ export default {
       username.classList.remove('is-invalid')
       userpassword.classList.remove('is-invalid')
       if (username.value.length > 0 && userpassword.value.length > 0) {
-        var checkresult = this.check_email(username.value)
+        const checkresult = this.check_email(username.value)
         if (checkresult) {
           username.classList.add('is-valid')
           userpassword.classList.add('is-valid')
@@ -229,19 +229,19 @@ export default {
       return useremail.includes('@')
     },
     setCookieforArray (name, value, days) {
-      var expires = ''
+      let expires = ''
       if (days) {
-        var date = new Date()
+        const date = new Date()
         date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000))
         expires = '; expires=' + date.toUTCString()
       }
-      document.cookie = name + '=' + (JSON.stringify(value) || '') + expires + '; path=/'
+      document.cookie = name + '=' + (JSON.stringify(value) || '') + expires + '; path=/; Secure; HttpOnly, SameSite=Strict'
     },
     getCookieforArray (name) {
-      var nameEQ = name + '='
-      var ca = document.cookie.split(';')
-      for (var i = 0; i < ca.length; i++) {
-        var c = ca[i]
+      const nameEQ = name + '='
+      const ca = document.cookie.split(';')
+      for (let i = 0; i < ca.length; i++) {
+        let c = ca[i]
         while (c.charAt(0) === ' ') c = c.substring(1, c.length)
         if (c.indexOf(nameEQ) === 0) {
           return JSON.parse(c.substring(nameEQ.length, c.length))

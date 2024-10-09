@@ -87,11 +87,11 @@ export default {
       // Get form field values
       const name = document.getElementById('name').value.trim()
       const email = document.getElementById('email').value.trim()
-      const message = document.getElementById('message').value.trim()
+      const usermessage = document.getElementById('message').value.trim()
       // Clear previous error message
       errorMessage.textContent = ''
       // Check if fields are empty
-      if (name === '' || email === '' || message === '') {
+      if (name === '' || email === '' || usermessage === '') {
         errorMessage.textContent = 'All fields are required.'
         errorMessage.style.color = 'red'
         return
@@ -107,7 +107,7 @@ export default {
         to_name: 'Admin', // The recipient's name
         from_name: name, // User's name
         from_email: email, // User's email
-        message: message
+        message: usermessage
       }).then(function (response) {
         alert('Email sent successfully!')
         form.reset() // Reset the form after successful submission
